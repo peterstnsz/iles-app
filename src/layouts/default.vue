@@ -5,99 +5,44 @@
 </template>
 
 <style>
-@import "~/assets/base.css";
+@import "~/assets/style.css";
 
 #app {
-  max-width: 1280px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+  padding: 0 2rem;
 }
 
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-#nav {
-  width: 100%;
-  font-size: 12px;
+.project-hero {
+  margin: 4rem 0 0 0;
   text-align: center;
-  margin-top: 2rem;
+  color: var(--color-base-1);
 }
 
-#nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-#nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-#nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-#nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
+@media (min-width: 860px) {
   #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    padding: 0 6rem;
   }
+}
 
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+@media (max-width: 500px) {
+  #app {
+    padding: 0 1.2rem;
   }
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.label {
+  display: block;
+  font-weight: 700;
+}
+table {
+  border-collapse: collapse;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  #nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+table,
+th,
+td {
+  border: 0px solid black;
+  padding: 0 1.5rem 0 0;
 }
 </style>
