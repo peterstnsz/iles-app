@@ -1,47 +1,15 @@
-<!-- <template>
-  <header
-    class="header"
-    :class="{
-      sticky:
-        $route.path === '/' ||
-        $route.path.includes('/photography/') ||
-        $route.path.includes('/design/') ||
-        $route.path.includes('/'),
-    }"
-  >
+<template>
+  <header class="header">
     <div class="container">
-      <nav class="nav left">
-        <div align="center">
-          <g-link :to="{ name: 'home' }" class="home-link">
-            <img
-              src="../../static/logo.svg"
-              :alt="settings.site_name"
-              class="logo"
-              width="23"
-              height="24"
-            />
-          </g-link>
-        </div>
-      </nav>
-      <nav class="nav right">
-        <g-link class="nav__link" to="/design">Design</g-link>
-        <g-link class="nav__link" to="/photography">Photo</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
-      </nav>
+      <div class="logo">LOGO</div>
+      <ul class="nav">
+        <li><router-link to="/design">Design</router-link></li>
+        <li><router-link to="/photo">Photo</router-link></li>
+        <li><router-link to="/about">About</router-link></li>
+      </ul>
     </div>
   </header>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      logo: require("../../static/logo.svg"),
-      settings: require("../../data/theme.json"),
-    };
-  },
-};
-</script>
 
 <style scoped>
 .header {
@@ -65,7 +33,7 @@ export default {
   }
 }
 
-.header.sticky {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -88,7 +56,12 @@ export default {
   height: 1.5em;
 }
 
-nav > * {
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+/* nav > * {
   font-size: 0.9rem;
   font-weight: 600;
   text-decoration: none;
@@ -113,13 +86,5 @@ nav > .active {
   color: inherit;
   background: var(--color-contrast-2);
   border-radius: 8px;
-}
-</style> -->
-
-<template>
-  <div id="nav">
-    <router-link to="/design">Design</router-link>
-    <router-link to="/photo">Photo</router-link>
-    <router-link to="/about">About</router-link>
-  </div>
-</template>
+} */
+</style>
