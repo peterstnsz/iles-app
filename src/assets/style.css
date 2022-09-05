@@ -1,68 +1,109 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --m-lg: calc(8px + 2vw);
-  --m-sm: calc(1px + 1vw);
-  --shadow-card: 0px 9px 24px rgba(0, 0, 0, 0.1);
-  --shadow-card-hover: 0 20px 40px -20px rgba(0, 0, 0, 0.35);
+  --c-brand: #3eaf7c;
+  --c-brand-light: #4abf8a;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  position: relative;
-  font-weight: normal;
+nav img {
+  vertical-align: middle;
 }
 
-body {
-  --color-base: rgb(255, 255, 255);
-  --color-base-1: rgb(243, 243, 243);
-  --color-base-2: rgb(235, 235, 235);
-  --color-contrast: rgb(15, 15, 15);
-  --color-contrast-1: rgba(43, 43, 43, 0.8);
-  --color-contrast-2: rgba(128, 128, 128, 0.3);
-  --color-contrast-3: rgba(128, 128, 128, 0.7);
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  font-size: 15px;
-  line-height: 1.5;
-  background: var(--color-base);
-  color: var(--color-contrast);
-  transition: background 0.6s ease;
-  /* text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+p img {
+  margin: 0px auto;
 }
 
-body.dark {
-  --color-base: rgb(43, 43, 43);
-  --color-base-1: rgba(43, 43, 43, 0.8);
-  --color-contrast: rgb(255, 255, 255);
-  --color-contrast-1: rgba(243, 243, 243, 0.8);
-  --color-contrast-2: rgba(243, 243, 243, 0.3);
-  --color-contrast-3: rgba(243, 243, 243, 0.7);
+.prose hr {
+  border-top: 1px solid #e5e7eb;
 }
 
-a {
-  color: inherit;
+.link {
+  color: var(--c-brand);
 }
 
-img {
-  max-width: 100%;
+.link:hover {
+  color: var(--c-brand-light);
 }
 
-h1 {
-  font-size: clamp(1.6rem, -0.875rem + 8.333vw, 2.8rem);
-  letter-spacing: -0.01em;
-  margin-top: var(--m-lg);
-  margin-bottom: var(--m-sm);
+.header-anchor {
+  display: none;
 }
 
-h2 {
-  font-size: clamp(1.4rem, -0.875rem + 8.333vw, 2rem);
-  margin-top: var(--m-lg);
-  margin-bottom: var(--m-sm);
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML.
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ *
+ * @author Rose Pritchard
+ */
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #999;
+}
+
+.token.punctuation {
+  color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+  color: #e2777a;
+}
+
+.token.function-name {
+  color: #6196cc;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+  color: #f08d49;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+  color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+  color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+  color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+  color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.inserted {
+  color: #67cdcc;
 }

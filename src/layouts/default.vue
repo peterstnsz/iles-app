@@ -1,11 +1,28 @@
+<script setup lang="ts">
+useHead({
+  script: [
+    {
+      async: true,
+      children:
+        'console.log("Powered by îles 🏝", "https://iles-docs.netlify.app")',
+    },
+  ],
+});
+</script>
+
 <template>
   <Navigation />
-  <slot />
+  <MetaTags />
+  <div class="antialiased">
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      <slot />
+    </main>
+  </div>
   <Footer />
 </template>
 
 <style>
-@import "~/assets/style.css";
+/* @import "~/assets/style.css"; */
 
 #app {
   max-width: 1080px;
