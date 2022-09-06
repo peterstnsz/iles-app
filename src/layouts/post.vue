@@ -61,7 +61,7 @@ const author = $computed(() => {
           </div>
         </div>
         <BackLink class="block pt-8" client:none href="/">
-          Back to the design
+          Back to the blog
         </BackLink>
       </footer>
     </div>

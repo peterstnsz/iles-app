@@ -3,6 +3,7 @@ import { defineConfig } from "iles";
 import excerpt from "@islands/excerpt";
 import feed from "@islands/feed";
 import windicss from "vite-plugin-windicss";
+import headings from "@islands/headings";
 
 // export default {
 //   plugins: [windicss()],
@@ -23,6 +24,7 @@ export default defineConfig({
     "@islands/headings",
     excerpt(),
     feed(),
+    headings(),
   ],
   extendFrontmatter(frontmatter, filename) {
     if (filename.includes("/posts/")) frontmatter.layout ||= "post";

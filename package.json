@@ -10,7 +10,7 @@
   "engines": {
     "node": "^14.18 || >= 16.0.0"
   },
-  "devDependencies": {
+  "dependencies": {
     "@islands/excerpt": "^0.8.0",
     "@islands/headings": "^0.8.0",
     "iles": "^0.8.0",
@@ -18,9 +18,7 @@
     "vite-plugin-solid": "^2.3.0",
     "vite-plugin-windicss": "^1.8.7",
     "vue-tsc": "^0.38",
-    "windicss": "^3.5.6"
-  },
-  "dependencies": {
+    "windicss": "^3.5.6",
     "@islands/feed": "^0.8.0",
     "remark-gfm": "^3.0.1"
   }

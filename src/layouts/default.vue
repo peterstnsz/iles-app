@@ -1,15 +1,3 @@
-<script setup lang="ts">
-useHead({
-  script: [
-    {
-      async: true,
-      children:
-        'console.log("Powered by îles 🏝", "https://iles-docs.netlify.app")',
-    },
-  ],
-});
-</script>
-
 <template>
   <Navigation />
   <MetaTags />
@@ -22,7 +10,7 @@ useHead({
 </template>
 
 <style>
-/* @import "~/assets/style.css"; */
+@import "~/assets/style.css";
 
 #app {
   max-width: 1080px;
