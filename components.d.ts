@@ -18,7 +18,6 @@ declare module '@vue/runtime-core' {
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Island: typeof import('./node_modules/iles/dist/client/app/components/Island.vue')['default']
     MetaTags: typeof import('./src/components/MetaTags.vue')['default']
-    NavBarLinks: typeof import('./src/components/NavBarLinks.svelte')['default']
     Navigation: typeof import('./src/components/Navigation.vue')['default']
     PostDate: typeof import('./src/components/PostDate.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -26,5 +25,6 @@ declare module '@vue/runtime-core' {
     SupportIcon: typeof import('./src/components/icons/SupportIcon.vue')['default']
     ToolingIcon: typeof import('./src/components/icons/ToolingIcon.vue')['default']
     Welcome: typeof import('./src/components/Welcome.vue')['default']
+    WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }

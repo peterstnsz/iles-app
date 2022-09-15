@@ -1,21 +1,20 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "target": "esnext",
-    "useDefineForClassFields": true,
-    "module": "esnext",
+    "baseUrl": ".",
+    "module": "es2020",
+    "target": "es2020",
     "moduleResolution": "node",
-    "isolatedModules": true,
-    "strict": true,
     "jsx": "preserve",
-    "sourceMap": true,
-    "resolveJsonModule": true,
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "strict": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
     "paths": {
-      "@/*": ["src/*"],
       "~/*": ["src/*"]
-    },
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
-    "skipLibCheck": true
+    }
   }
 }
